@@ -9,6 +9,10 @@ const folderName = `${year}-${month}-${day}`;
 
 const folderPath = path.join('tasks', folderName);
 
+if (!fs.existsSync('tasks')) {
+    fs.mkdirSync('tasks');
+}
+
 if (!fs.existsSync(folderPath)) {
     fs.mkdirSync(folderPath);
     const indexFilePath = path.join(folderPath, 'index.ts');
@@ -21,4 +25,3 @@ if (!fs.existsSync(folderPath)) {
 } else {
     console.log(`Folder na dzisiejsze zadania już istnieje (tasks/${folderName}) 🤔`);
 }
-
