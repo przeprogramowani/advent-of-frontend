@@ -5,7 +5,7 @@
 
 # Advent of Frontend 2023
 
-🎄 [https://opanujfrontend.pl/advent](https://opanujfrontend.pl/advent) 🎄
+🎄 [https://opanujfrontend.pl/advent](https://opanujfrontend.pl/unstable-advent) 🎄
 
 Ucz się frontendu wykorzystując kreatywność Sztucznej Inteligencji ⚡️.
 
