@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Szablon dla zadań z opanujfrontend.pl/advent",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "create": "node ./scripts/create-template.js",
     "test": "jest"
   },
   "author": "Przeprogramowani",
