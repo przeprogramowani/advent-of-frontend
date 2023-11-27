@@ -1,11 +1,12 @@
-![](./resources/logo-dark-vertical-1.png)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 # Advent of Frontend 2023
 
-🎄 [https://opanujfrontend.pl/advent](https://opanujfrontend.pl/unstable-advent) 🎄
+<div>
+  <img src="./resources/logo-dark.png" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;"/>
+</div>
+
+<p style="text-align: center;">
+🎄 <a href="https://opanujfrontend.pl/unstable-advent">https://opanujfrontend.pl/advent</a> 🎄
+</p>
 
 Ucz się frontendu wykorzystując kreatywność Sztucznej Inteligencji ⚡️.
 
@@ -15,6 +16,10 @@ Każdego dnia ChatGPT generuje nowe wyzwanie, które pomoże ci budować nawyk r
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
