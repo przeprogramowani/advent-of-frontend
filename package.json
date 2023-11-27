@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "create": "node ./scripts/create-template.js",
-    "test": "jest"
+    "test": "jest ./tasks/$(date +'%Y-%m-%d')/index.test.ts",
+    "test:all": "jest"
   },
   "author": "Przeprogramowani",
   "license": "ISC",
