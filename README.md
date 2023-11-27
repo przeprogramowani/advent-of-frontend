@@ -12,10 +12,10 @@ Ucz się frontendu wykorzystując kreatywność Sztucznej Inteligencji ⚡️.
 
 Każdego dnia ChatGPT generuje nowe wyzwanie, które pomoże ci budować nawyk regularnej nauki.
 
-(under development)
+(🗓️ Ruszamy 1 grudnia)
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
