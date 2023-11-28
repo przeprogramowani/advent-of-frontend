@@ -10,7 +10,7 @@
 
 Ucz się frontendu wykorzystując kreatywność Sztucznej Inteligencji ⚡️.
 
-Każdego dnia ChatGPT generuje nowe wyzwanie, które pomoże ci budować nawyk regularnej nauki.
+Każdego dnia GPT-4 generuje nowe wyzwanie, które pomoże ci budować nawyk regularnej nauki.
 
 (🗓️ Ruszamy 1 grudnia)
 ## Contributors ✨
