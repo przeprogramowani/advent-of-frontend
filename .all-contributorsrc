@@ -24,6 +24,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "AdiPol1359",
+      "name": "Adrian Polak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27779154?v=4",
+      "profile": "https://adipol.dev",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
