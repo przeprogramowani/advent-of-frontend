@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test:all
+        run: npm run test:all
 
       - name: Create test directory
         run: npm run create
