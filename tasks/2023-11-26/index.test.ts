@@ -2,5 +2,5 @@
 import { exampleFunction } from "."
 
 test('should return 2', () => {
-    exampleFunction()
+    expect(exampleFunction()).toBe(2)
 })
