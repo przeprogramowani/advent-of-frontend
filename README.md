@@ -8,7 +8,15 @@ Ucz się frontendu wykorzystując kreatywność Sztucznej Inteligencji ⚡️.
 
 Każdego dnia GPT-4 generuje nowe wyzwanie, które pomoże ci budować nawyk regularnej nauki.
 
-## Kontrybutorzy ✨
+## 📝 Zadania
+
+Zadania są dostępne na stronie [opanujfrontend.pl/advent](https://opanujfrontend.pl/advent).
+
+Każdego dnia wykonaj w repozytorium polecenie `npm run create` a następnie skopiuj kod ze strony.
+
+Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test`.
+
+## 💜 Kontrybutorzy
 
 Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/docs/en/emoji-key)):
 
