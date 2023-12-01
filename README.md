@@ -1,19 +1,14 @@
-# Advent of Frontend 2023
+# 🎄 Advent of Frontend 2023 🎄
 
-<div>
-  <img src="./resources/logo-dark.png" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;"/>
-</div>
+![](./resources/head.png)
 
-<p style="text-align: center;">
-🎄 <a href="https://opanujfrontend.pl/unstable-advent">https://opanujfrontend.pl/advent</a> 🎄
-</p>
+[👉 Przejdź do zadań](https://opanujfrontend.pl/advent)
 
 Ucz się frontendu wykorzystując kreatywność Sztucznej Inteligencji ⚡️.
 
 Każdego dnia GPT-4 generuje nowe wyzwanie, które pomoże ci budować nawyk regularnej nauki.
 
-(🗓️ Ruszamy 1 grudnia)
-## Contributors ✨
+## Kontrybutorzy ✨
 
 Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/docs/en/emoji-key)):
 
