@@ -1,4 +1,4 @@
-import { ChristmasQueue } from "./index";
+import { ChristmasQueue } from "./ChristmasQueue";
 
 describe("ChristmasQueue", () => {
   test("should enqueue and dequeue items based on priority", () => {
