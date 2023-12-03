@@ -13,13 +13,10 @@ export function znajdzWorek(
       return null;
     }
 
-    const { x, y, z, czas } = loc;
     if (!res) res = loc;
-    else {
-      const locResult = mapa(x, y, z, czas);
-      const currentHighestLoc = mapa(res.x, res.y, res.z, res.czas);
-      if (locResult > currentHighestLoc) res = loc;
-    }
+    const locResult = mapa(loc.x, loc.y, loc.z, loc.czas);
+    const currentHighestLoc = mapa(res.x, res.y, res.z, res.czas);
+    if (locResult > currentHighestLoc) res = loc;
   });
 
   return res;
