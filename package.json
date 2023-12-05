@@ -6,7 +6,7 @@
   "author": "Przeprogramowani",
   "license": "ISC",
   "scripts": {
-    "create": "node ./scripts/create-template.js",
+    "create": "node ./scripts/create-templates.js",
     "test": "jest ./tasks/$(date +'%Y-%m-%d')/index.test.ts",
     "test:all": "jest"
   },
