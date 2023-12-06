@@ -1,11 +1,5 @@
-function generateRandomId() {
-  const randomId = Math.floor(Math.random() * 10000)
-    .toString()
-    .padStart(4, "0");
-  return randomId;
-}
-
-type StateType = string | null;
+import { Machine } from "./Machine";
+import { StateType } from "./types";
 
 export class OrderController {
   #machines: Machine[] = [];
@@ -25,38 +19,7 @@ export class OrderController {
   }
 
   unregisterMachine(machine: Machine): void {
-    const machineToStop = this.#machines.find((m) => m.id === machine.id);
-    if (machineToStop) {
-      machineToStop.state = null;
-      const filteredMachines = this.#machines.filter(
-        (m) => m.id !== machineToStop.id
-      );
-      this.#machines = filteredMachines;
-    }
-  }
-}
-
-export class Machine {
-  id = generateRandomId();
-  #state: string | null = null;
-  #ordersHistory: string[] = [];
-
-  get state(): string | null {
-    return this.#state;
-  }
-
-  set state(state: string | null) {
-    if (state) {
-      this.#ordersHistory.push(state);
-      this.#state = state;
-    } else {
-      this.#state = null;
-    }
-  }
-
-  performAudit(): string[] {
-    return this.#ordersHistory.map(
-      (order, index) => `Order #${index + 1} - ${order}`
-    );
+    machine.state = null;
+    this.#machines = this.#machines.filter((x) => x.id !== machine.id);
   }
 }

@@ -1,4 +1,5 @@
-import { OrderController, Machine } from "./index";
+import { Machine } from "./Machine";
+import { OrderController } from "./index";
 
 describe("OrderController", () => {
   it("should notify all machines when orders change", () => {
