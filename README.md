@@ -14,6 +14,12 @@ Zadania są dostępne na stronie [opanujfrontend.pl/advent](https://opanujfronte
 
 Każdego dnia wykonaj w repozytorium polecenie `npm run create` a następnie skopiuj kod ze strony.
 
+Użyj komendy `npm run create all`, jeśli chcesz wygenerować foldery z plikami startowymi
+na każdy z dni wyzwania.
+
+Użyj komendy `npm run create with-previous`, aby utworzyć brakujące zadania od aktualnej daty do
+dnia pierwszego wyzwania.
+
 Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test`.
 
 ## 💜 Kontrybutorzy
@@ -21,7 +27,9 @@ Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez po
 Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
