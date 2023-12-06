@@ -27,7 +27,9 @@ export class OrderController {
   }
   
   private isValidState(order: string) {
-    return true;
+    // Przyjmujemy, że tylko określone stany są poprawne (tu: 'snowboards', 'game consoles', 'streaming gear')
+    const validStates = ['snowboards', 'game consoles', 'streaming gear'];
+    return validStates.includes(order);
   }
 }
 
