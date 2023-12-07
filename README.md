@@ -16,6 +16,8 @@ Każdego dnia wykonaj w repozytorium polecenie `npm run create` a następnie sko
 
 Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test`.
 
+Możesz również wykonać polecenie `npm run create:month`, aby przygotować puste pliki do zadań na wszystkie 24 dni w kalendarzu.
+
 ## 💜 Kontrybutorzy
 
 Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/docs/en/emoji-key)):
