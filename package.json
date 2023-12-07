@@ -7,6 +7,7 @@
   "license": "ISC",
   "scripts": {
     "create": "node ./scripts/create-template.js",
+    "create:month": "node ./scripts/create-month-templates.js",
     "test": "jest ./tasks/$(date +'%Y-%m-%d')/index.test.ts",
     "test:all": "jest"
   },
