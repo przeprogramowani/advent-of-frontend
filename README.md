@@ -14,9 +14,12 @@ Zadania są dostępne na stronie [opanujfrontend.pl/advent](https://opanujfronte
 
 Każdego dnia wykonaj w repozytorium polecenie `npm run create` a następnie skopiuj kod ze strony.
 
-Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test`.
+Użyj komendy `npm run create:missing`, aby utworzyć brakujące zadania od aktualnej daty do
+dnia pierwszego wyzwania.
 
 Możesz również wykonać polecenie `npm run create:month`, aby przygotować puste pliki do zadań na wszystkie 24 dni w kalendarzu.
+
+Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test`.
 
 ## 💜 Kontrybutorzy
 

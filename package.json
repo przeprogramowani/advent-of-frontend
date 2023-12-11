@@ -1,21 +1,22 @@
 {
-  "name": "advent-of-frontend",
-  "version": "0.0.1",
-  "type": "module",
-  "description": "Szablon dla zadań z opanujfrontend.pl/advent",
-  "author": "Przeprogramowani",
-  "license": "ISC",
-  "scripts": {
-    "create": "node ./scripts/create-template.js",
-    "create:month": "node ./scripts/create-month-templates.js",
-    "test": "jest ./tasks/$(date +'%Y-%m-%d')/index.test.ts",
-    "test:all": "jest"
-  },
-  "devDependencies": {
-    "@types/jest": "29.5.10",
-    "jest": "29.7.0",
-    "ts-jest": "29.1.1",
-    "tsx": "4.5.0",
-    "typescript": "5.3.2"
-  }
+	"name": "advent-of-frontend",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "Szablon dla zadań z opanujfrontend.pl/advent",
+	"author": "Przeprogramowani",
+	"license": "ISC",
+	"scripts": {
+		"create": "node ./scripts/create-template.js",
+		"create:missing": "node ./scripts/create-template.js missing",
+		"create:month": "node ./scripts/create-month-templates.js",
+		"test": "jest ./tasks/$(date +'%Y-%m-%d')/index.test.ts",
+		"test:all": "jest"
+	},
+	"devDependencies": {
+		"@types/jest": "29.5.10",
+		"jest": "29.7.0",
+		"ts-jest": "29.1.1",
+		"tsx": "4.5.0",
+		"typescript": "5.3.2"
+	}
 }
