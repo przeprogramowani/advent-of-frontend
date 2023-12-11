@@ -51,10 +51,6 @@ export class CountryStrategy implements SorterStrategy {
                 return -1;
             }
             
-            if (countryA === 'pl') {
-                return 1;
-            }
-
             return countryA < countryB ? -1 : 1;
         });
     }
