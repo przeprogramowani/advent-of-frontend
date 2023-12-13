@@ -11,7 +11,7 @@ const testPath = `./tasks/${year}-${month}-${day}/index.test.ts`;
 const fullTestPath = join(process.cwd(), testPath);
 
 if (existsSync(fullTestPath)) {
-  exec(`jest --colors${testPath}`, (error, stdout, stderr) => {
+  exec(`jest --colors ${testPath}`, (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
@@ -20,6 +20,7 @@ if (existsSync(fullTestPath)) {
     console.error(`stderr: ${stderr}`);
   });
 } else {
+  console.log(`Nie znaleziono folderu z dzisiejszą datą: ${testPath}. Uruchamiam wszystkie testy.`);
   exec('jest --colors', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
