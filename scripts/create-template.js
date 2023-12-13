@@ -1,27 +1,19 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import { createTaskFolder, createTaskFoldersFromRange } from "./task-folder.js";
 
-const today = new Date();
-const year = today.getFullYear();
-const month = String(today.getMonth() + 1).padStart(2, '0');
-const day = String(today.getDate()).padStart(2, '0');
-const folderName = `${year}-${month}-${day}`;
+const arg = process.argv[2];
 
-const folderPath = path.join('tasks', folderName);
-
-if (!fs.existsSync('tasks')) {
-    fs.mkdirSync('tasks');
+if (!fs.existsSync("tasks")) {
+	fs.mkdirSync("tasks");
 }
 
-if (!fs.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath);
-    const indexFilePath = path.join(folderPath, 'index.ts');
-    fs.writeFileSync(indexFilePath, '// Tutaj skopiuj kod zadania');
+if (!arg) {
+	createTaskFoldersFromRange(new Date(), new Date());
+}
 
-    const testFilePath = path.join(folderPath, 'index.test.ts');
-    fs.writeFileSync(testFilePath, '// Tutaj skopiuj testy dla zadania. Uruchom je poleceniem `npm test`');
+if (arg === "missing") {
+	const startDate = new Date("2023-12-01");
+	const endDate = new Date();
 
-    console.log(`Przygotowano szablon na zadanie w folderze tasks/${folderName} 🎄`)
-} else {
-    console.log(`Folder na dzisiejsze zadania już istnieje (tasks/${folderName}) 🤔`);
+	createTaskFoldersFromRange(startDate, endDate);
 }
