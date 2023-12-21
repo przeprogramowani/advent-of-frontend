@@ -9,7 +9,7 @@
 		"create": "node ./scripts/create-template.js",
 		"create:missing": "node ./scripts/create-template.js missing",
 		"create:month": "node ./scripts/create-month-templates.js",
-		"test": "jest ./tasks/$(date +'%Y-%m-%d')/index.test.ts",
+		"test": "node ./scripts/test.cjs",
 		"test:all": "jest"
 	},
 	"devDependencies": {
