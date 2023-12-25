@@ -34,6 +34,33 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "MarcinParda",
+      "name": "Marcin Parda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32539248?v=4",
+      "profile": "https://marcinparda.vercel.app/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kumiega",
+      "name": "kumiega",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134657075?v=4",
+      "profile": "https://github.com/kumiega",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mystertaran",
+      "name": "Szymon Taranczewski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113885422?v=4",
+      "profile": "https://sdconcept.pl",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
