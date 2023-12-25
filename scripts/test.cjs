@@ -1,11 +1,20 @@
 const { exec } = require('child_process');
-const { existsSync } = require('fs');
+const { existsSync, readdirSync } = require('fs');
 const { join } = require('path');
 
-const ADVENT_OF_FRONTEND_YEAR = '2023';
-const ADVENT_OF_FRONTEND_MONTH = '12';
-
 const VALID_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+function isValidDate(str) {
+  const date = new Date(str);
+  return !isNaN(date) &&
+    VALID_DATE_PATTERN.test(str);
+}
+
+function isNumeric(str) {
+  return typeof str === 'string' &&
+    !isNaN(str) &&
+    !isNaN(parseInt(str));
+}
 
 function buildPath(type, testDateArg) {
   const dateHandlers = {
@@ -22,26 +31,40 @@ function buildPath(type, testDateArg) {
         console.error('Podaj dzień z zakresu od 1 do 24.');
         return;
       }
-      const year = ADVENT_OF_FRONTEND_YEAR;
-      const month = ADVENT_OF_FRONTEND_MONTH;
+
       const day = String(testDay).padStart(2, '0');
+
+      const directories = readdirSync('./tasks');
+      
+      let selectedDirectory;
+      directories
+        .sort()
+        .forEach(dir => {
+          const dirAsDate = new Date(dir);
+
+          if (isValidDate(dir)
+              && dirAsDate <= new Date()
+              && dirAsDate.getDate() === testDay) {
+                selectedDirectory = dir;
+          }
+        });
+      const now = new Date();  
+      const nowYear = now.getFullYear();
+      const nowMonth = now.getMonth() + 1;
+
+      if (!selectedDirectory) {
+        console.error(`Nie znaleziono folderu z datą: ${nowYear}-${nowMonth}-${day}.`);
+        return;
+      }
+
+      const selectedDate = new Date(selectedDirectory);
+      const year = String(selectedDate.getFullYear()).padStart(2, '0');
+      const month = String(selectedDate.getMonth() + 1).padStart(2, '0');
       return `./tasks/${year}-${month}-${day}/index.test.ts`;
     },
   };
 
   return dateHandlers[type](testDateArg);
-}
-
-function isValidDate(str) {
-  const date = new Date(str);
-  return !isNaN(date) &&
-    VALID_DATE_PATTERN.test(str);
-}
-
-function isNumeric(str) {
-  return typeof str === 'string' &&
-    !isNaN(str) &&
-    !isNaN(parseInt(str));
 }
 
 function runTests(testPath) {
@@ -59,8 +82,8 @@ function runAllTests() {
 function handleTestExecution(error, stdout, stderr) {
   if (error) {
     console.error(`exec error: ${error}`);
-    return;
   }
+
   console.log(`stdout: ${stdout}`);
   console.error(`stderr: ${stderr}`);
 }
