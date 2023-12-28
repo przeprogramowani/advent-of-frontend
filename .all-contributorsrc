@@ -61,6 +61,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "adrianghub",
+      "name": "Adrian Zinko",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44274979?v=4",
+      "profile": "http://adrianzinko.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
