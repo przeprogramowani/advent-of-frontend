@@ -1,40 +1,26 @@
-const { exec } = require('child_process');
-const { existsSync, readdirSync } = require('fs');
-const { join } = require('path');
+import { exec } from "child_process";
+import { existsSync, readdirSync } from "fs";
+import { join } from "path";
+import { getFolderName } from "./task-folder.js";
+import { isNumeric, isValidDate } from "./utils.js";
 
-const VALID_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
-
-function isValidDate(str) {
-  const date = new Date(str);
-  return !isNaN(date) &&
-    VALID_DATE_PATTERN.test(str);
+export function getTestFilePath(date) {
+  return join("tasks", getFolderName(date), "index.test.ts");
 }
 
-function isNumeric(str) {
-  return typeof str === 'string' &&
-    !isNaN(str) &&
-    !isNaN(parseInt(str));
-}
-
-function buildPath(type, testDateArg) {
-  const dateHandlers = {
-    'date': (testDateArg) => {
-      const date = new Date(testDateArg);
-      const year = date.getFullYear();
-      const month = String(date.getMonth() + 1).padStart(2, '0');
-      const day = String(date.getDate()).padStart(2, '0');
-      return `./tasks/${year}-${month}-${day}/index.test.ts`;
-    },
-    'numeric': (testDateArg) => {
+function getTestPath(argHandlerType, testDateArg) {
+  const argHandlers = {
+    "date": (testDateArg) => getTestFilePath(new Date(testDateArg)),
+    "day": (testDateArg) => {
       const testDay = parseInt(testDateArg);
       if (testDay < 1 || testDay > 24) {
-        console.error('Podaj dzień z zakresu od 1 do 24.');
+        console.error("Podaj dzień z zakresu od 1 do 24.");
         return;
       }
 
-      const day = String(testDay).padStart(2, '0');
+      const day = String(testDay).padStart(2, "0");
 
-      const directories = readdirSync('./tasks');
+      const directories = readdirSync("./tasks");
       
       let selectedDirectory;
       directories
@@ -58,13 +44,11 @@ function buildPath(type, testDateArg) {
       }
 
       const selectedDate = new Date(selectedDirectory);
-      const year = String(selectedDate.getFullYear()).padStart(2, '0');
-      const month = String(selectedDate.getMonth() + 1).padStart(2, '0');
-      return `./tasks/${year}-${month}-${day}/index.test.ts`;
+      return getTestFilePath(selectedDate);
     },
   };
 
-  return dateHandlers[type](testDateArg);
+  return argHandlers[argHandlerType](testDateArg);
 }
 
 function runTests(testPath) {
@@ -88,28 +72,28 @@ function handleTestExecution(error, stdout, stderr) {
   console.error(`stderr: ${stderr}`);
 }
 
-function getValidDateHandler(testDateArg) {
+function getArgHandler(testDateArg) {
   if (isValidDate(testDateArg)) {
-    return 'date';
+    return "date";
   } else if (isNumeric(testDateArg)) {
-    return 'numeric';
+    return "day";
   } else {
     return null;
   }
 }
 
-function getTestPath(testDateArg) {
-  const handlerType = getValidDateHandler(testDateArg);
+function getTest(testDateArg) {
+  const argHandlerType = getArgHandler(testDateArg);
 
-  if (handlerType) {
-    return buildPath(handlerType, testDateArg);
+  if (argHandlerType) {
+    return getTestPath(argHandlerType, testDateArg);
   }
 
-  console.error('Podany argument jest nieprawidłowy lub format daty jest nieobsługiwany.');
+  console.error("Podany argument jest nieprawidłowy lub format daty jest nieobsługiwany.");
 }
 
 function runTestsForDay(testDateArg) {
-  const testPath = getTestPath(testDateArg);
+  const testPath = getTest(testDateArg);
   if (!testPath) {
     return;
   }
