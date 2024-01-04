@@ -29,7 +29,7 @@ Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez po
 Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -44,6 +44,7 @@ Nasz projekt wspierają ([zobacz typ kontrybucji](https://allcontributors.org/do
       <td align="center" valign="top" width="14.28%"><a href="https://marcinparda.vercel.app/"><img src="https://avatars.githubusercontent.com/u/32539248?v=4?s=100" width="100px;" alt="Marcin Parda"/><br /><sub><b>Marcin Parda</b></sub></a><br /><a href="https://github.com/przeprogramowani/advent-of-frontend/commits?author=MarcinParda" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kumiega"><img src="https://avatars.githubusercontent.com/u/134657075?v=4?s=100" width="100px;" alt="kumiega"/><br /><sub><b>kumiega</b></sub></a><br /><a href="https://github.com/przeprogramowani/advent-of-frontend/commits?author=kumiega" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://sdconcept.pl"><img src="https://avatars.githubusercontent.com/u/113885422?v=4?s=100" width="100px;" alt="Szymon Taranczewski"/><br /><sub><b>Szymon Taranczewski</b></sub></a><br /><a href="https://github.com/przeprogramowani/advent-of-frontend/commits?author=mystertaran" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://adrianzinko.com"><img src="https://avatars.githubusercontent.com/u/44274979?v=4?s=100" width="100px;" alt="Adrian Zinko"/><br /><sub><b>Adrian Zinko</b></sub></a><br /><a href="https://github.com/przeprogramowani/advent-of-frontend/commits?author=adrianghub" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
