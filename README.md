@@ -19,7 +19,10 @@ dnia pierwszego wyzwania.
 
 Możesz również wykonać polecenie `npm run create:month`, aby przygotować puste pliki do zadań na wszystkie 24 dni w kalendarzu.
 
-Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test`.
+Teraz możesz skupić się na wykonaniu zadania i weryfikacji testów poprzez polecenie `npm test` z odpowiednimi argumentami:
+* `npm test` uruchomi wszystkie testy w projekcie.
+* `npm test 6` sprawdzi testy dla szóstego dnia w kalendarzu, wybierając odpowiednią datę z folderów z zadaniami np. `2023-12-06`.
+* `npm test 2023-12-01` pozwala na sprawdzenie testów dla konkretnej daty.
 
 ## 💜 Kontrybutorzy
 
